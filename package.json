@@ -1,0 +1,23 @@
+{
+  "name": "collect-chunks-webpack-plugin",
+  "version": "1.0.0",
+  "description": "The plugin generates a report that contains all the assets of specific entrypoints",
+  "main": "src/index.js",
+  "scripts": {
+    "format": "prettier --write src/"
+  },
+  "files": [
+    "src",
+    "package.json",
+    "README.md"
+  ],
+  "author": {
+    "name": "Vladislav Ivanov",
+    "email": "vladivanov.dev@gmail.com",
+    "url": "https://vladivanov.me/"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "prettier": "2.8.4"
+  }
+}
