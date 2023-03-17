@@ -27,6 +27,7 @@
     "keywords": [
         "webpack",
         "chunks",
+        "report",
         "ssr"
     ],
     "homepage": "https://github.com/yungvldai/chunks-report-webpack-plugin#readme",
