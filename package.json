@@ -9,11 +9,6 @@
         "prepare": "husky install",
         "pre-commit": "lint-staged"
     },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/yungvldai/collect-chunks-webpack-plugin.git"
-    },
-    "homepage": "https://github.com/yungvldai/collect-chunks-webpack-plugin#readme",
     "files": [
         "src",
         "package.json",
@@ -25,6 +20,16 @@
         "email": "vladivanov.dev@gmail.com",
         "url": "https://vladivanov.me/"
     },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/yungvldai/collect-chunks-webpack-plugin.git"
+    },
+    "keywords": [
+        "webpack",
+        "chunks",
+        "ssr"
+    ],
+    "homepage": "https://github.com/yungvldai/collect-chunks-webpack-plugin#readme",
     "license": "MIT",
     "devDependencies": {
         "husky": "8.0.3",
