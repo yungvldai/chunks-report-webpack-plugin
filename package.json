@@ -1,35 +1,35 @@
 {
-  "name": "collect-chunks-webpack-plugin",
-  "version": "1.0.0",
-  "description": "The plugin generates a report that contains all the assets of specific entrypoints",
-  "main": "src/index.js",
-  "scripts": {
-    "format": "prettier --write src/",
-    "release": "npm version $(semver $npm_package_version -i minor) && npm publish --tag latest",
-    "prepare": "husky install",
-    "pre-commit": "lint-staged"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/yungvldai/collect-chunks-webpack-plugin.git"
-  },
-  "homepage": "https://github.com/yungvldai/collect-chunks-webpack-plugin#readme",
-  "files": [
-    "src",
-    "package.json",
-    "README.md",
-    "LICENSE"
-  ],
-  "author": {
-    "name": "Vladislav Ivanov",
-    "email": "vladivanov.dev@gmail.com",
-    "url": "https://vladivanov.me/"
-  },
-  "license": "MIT",
-  "devDependencies": {
-    "husky": "8.0.3",
-    "lint-staged": "13.2.0",
-    "prettier": "2.8.4",
-    "semver": "7.3.8"
-  }
+    "name": "collect-chunks-webpack-plugin",
+    "version": "1.0.0",
+    "description": "The plugin generates a report that contains all the assets of specific entrypoints",
+    "main": "src/index.js",
+    "scripts": {
+        "format": "prettier --write src/",
+        "release": "npm version $(semver $npm_package_version -i minor) && npm publish --tag latest",
+        "prepare": "husky install",
+        "pre-commit": "lint-staged"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/yungvldai/collect-chunks-webpack-plugin.git"
+    },
+    "homepage": "https://github.com/yungvldai/collect-chunks-webpack-plugin#readme",
+    "files": [
+        "src",
+        "package.json",
+        "README.md",
+        "LICENSE"
+    ],
+    "author": {
+        "name": "Vladislav Ivanov",
+        "email": "vladivanov.dev@gmail.com",
+        "url": "https://vladivanov.me/"
+    },
+    "license": "MIT",
+    "devDependencies": {
+        "husky": "8.0.3",
+        "lint-staged": "13.2.0",
+        "prettier": "2.8.4",
+        "semver": "7.3.8"
+    }
 }
