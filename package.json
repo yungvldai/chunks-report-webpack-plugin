@@ -4,7 +4,8 @@
   "description": "The plugin generates a report that contains all the assets of specific entrypoints",
   "main": "src/index.js",
   "scripts": {
-    "format": "prettier --write src/"
+    "format": "prettier --write src/",
+    "release": "npm version $(semver $npm_package_version -i minor) && npm publish --tag latest"
   },
   "files": [
     "src",
@@ -18,6 +19,7 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "prettier": "2.8.4"
+    "prettier": "2.8.4",
+    "semver": "7.3.8"
   }
 }
