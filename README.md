@@ -8,14 +8,14 @@ This report can be used to render the page on the server
 
 ```js
 {
-    index: {
-        js: [ 'vendor.js', 'index.build.js' ],
-        css: [ 'index.build.css' ]
+    "index": {
+        "js": ["vendor.js", "index.build.js"],
+        "css": ["index.build.css"]
     },
-    office: {
-        js: [ 'vendor.js', 'office.build.js' ],
-        css: [ 'office.build.css' ]
-    },
+    "office": {
+        "js": ["vendor.js", "office.build.js"],
+        "css": ["office.build.css"]
+    }
 }
 ```
 
@@ -67,7 +67,7 @@ const config = {
 {
     js: /\.js$/,
     css: /\.css$/,
-},
+}
 ```
 
 **Description**: 
