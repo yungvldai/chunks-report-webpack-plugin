@@ -1,4 +1,4 @@
-# collect-chunks-webpack-plugin
+# chunks-report-webpack-plugin
 
 The plugin generates a report that contains all the assets of specific entrypoints.
 This report can be used to render the page on the server 
@@ -22,20 +22,20 @@ This report can be used to render the page on the server
 ## Getting started
 
 ```console
-npm i -D collect-chunks-webpack-plugin
+npm i -D chunks-report-webpack-plugin
 ```
 
 ## Usage
 
 ```js
-const CollectChunksPlugin = require('collect-chunks-webpack-plugin');
+const ChunksReportPlugin = require('chunks-report-webpack-plugin');
 
 /** @type {webpack.Configuration} */
 const config = {
     ...
     plugins: [
         ...
-        new CollectChunksWebpackPlugin({
+        new ChunksReportPlugin({
             outputPath: 'build/chunks.json',
             assetTypes: {
                 js: /\.js$/,

@@ -1,5 +1,5 @@
 {
-    "name": "collect-chunks-webpack-plugin",
+    "name": "chunks-report-webpack-plugin",
     "version": "1.0.0",
     "description": "The plugin generates a report that contains all the assets of specific entrypoints",
     "main": "src/index.js",
@@ -22,14 +22,14 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/yungvldai/collect-chunks-webpack-plugin.git"
+        "url": "https://github.com/yungvldai/chunks-report-webpack-plugin.git"
     },
     "keywords": [
         "webpack",
         "chunks",
         "ssr"
     ],
-    "homepage": "https://github.com/yungvldai/collect-chunks-webpack-plugin#readme",
+    "homepage": "https://github.com/yungvldai/chunks-report-webpack-plugin#readme",
     "license": "MIT",
     "devDependencies": {
         "husky": "8.0.3",

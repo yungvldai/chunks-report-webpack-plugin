@@ -1,6 +1,6 @@
 const { writeFileSync } = require('fs');
 
-class CollectChunksPlugin {
+class ChunksReportPlugin {
     static defaultOptions = {
         outputPath: 'chunks.json',
         assetTypes: {
@@ -11,13 +11,13 @@ class CollectChunksPlugin {
 
     constructor(options = {}) {
         this.options = {
-            ...CollectChunksPlugin.defaultOptions,
+            ...ChunksReportPlugin.defaultOptions,
             ...options,
         };
     }
 
     apply(compiler) {
-        compiler.hooks.emit.tap('CollectChunksPlugin', (compilation) => {
+        compiler.hooks.emit.tap('ChunksReportPlugin', (compilation) => {
             const entrypoints = {};
 
             for (const [name, entrypoint] of compilation.entrypoints) {
@@ -45,4 +45,4 @@ class CollectChunksPlugin {
     }
 }
 
-module.exports = CollectChunksPlugin;
+module.exports = ChunksReportPlugin;
