@@ -5,7 +5,9 @@
   "main": "src/index.js",
   "scripts": {
     "format": "prettier --write src/",
-    "release": "npm version $(semver $npm_package_version -i minor) && npm publish --tag latest"
+    "release": "npm version $(semver $npm_package_version -i minor) && npm publish --tag latest",
+    "prepare": "husky install",
+    "pre-commit": "npm run format"
   },
   "repository": {
     "type": "git",
@@ -25,6 +27,7 @@
   },
   "license": "MIT",
   "devDependencies": {
+    "husky": "8.0.3",
     "prettier": "2.8.4",
     "semver": "7.3.8"
   }
