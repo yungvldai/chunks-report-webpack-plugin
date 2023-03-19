@@ -1,4 +1,4 @@
-# chunks-report-webpack-plugin
+# chunks-report-webpack-plugin ![npm](https://img.shields.io/npm/v/chunks-report-webpack-plugin?style=plastic)
 
 The plugin generates a report that contains all the assets of specific entrypoints.
 This report can be used to render the page on the server 
