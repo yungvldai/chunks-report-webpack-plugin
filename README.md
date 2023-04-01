@@ -36,7 +36,7 @@ const config = {
     plugins: [
         ...
         new ChunksReportPlugin({
-            outputPath: 'build/chunks.json',
+            outputPath: 'build/chunks-report.json',
             assetTypes: {
                 js: /\.js$/,
                 css: /\.css$/,
@@ -54,13 +54,18 @@ const config = {
 
 **Type**: `string`
 
-**Default**: `'chunks.json'`
+**Default**: `'chunks-report.json'`
 
 **Description**: Allows you to specify the path to the file that will contain the report.
 
 ### `assetTypes`
 
-**Type**: `{ [type: string]: RegExp }`
+**Type**: 
+```ts
+{ 
+    [type: string]: RegExp 
+}
+```
 
 **Default**: 
 ```js

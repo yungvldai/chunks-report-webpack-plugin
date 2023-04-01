@@ -1,8 +1,9 @@
-const { writeFileSync } = require('fs');
+const { writeFileSync, existsSync, mkdirSync } = require('fs');
+const { dirname } = require('path');
 
 class ChunksReportPlugin {
     static defaultOptions = {
-        outputPath: 'chunks.json',
+        outputPath: 'chunks-report.json',
         assetTypes: {
             js: /\.js$/,
             css: /\.css$/,
@@ -38,6 +39,12 @@ class ChunksReportPlugin {
 
             if (compiler.options.mode === 'development') {
                 stringifyArgs.push(null, 4);
+            }
+
+            const dir = dirname(this.options.outputPath);
+
+            if (!existsSync(dir)) {
+                mkdirSync(dir, { recursive: true });
             }
 
             writeFileSync(this.options.outputPath, JSON.stringify.apply(null, stringifyArgs));
