@@ -1,5 +1,19 @@
 # chunks-report-webpack-plugin ![npm](https://img.shields.io/npm/v/chunks-report-webpack-plugin?style=plastic)
 
+<!-- TOC tocDepth:2..3 chapterDepth:2..6 -->
+
+- [What is it?](#what-is-it)
+- [Getting started](#getting-started)
+- [Usage](#usage)
+- [Options](#options)
+    - [`outputPath`](#outputpath)
+    - [`exclude`](#exclude)
+    - [`assetTypes`](#assettypes)
+
+<!-- /TOC -->
+
+## What is it?
+
 The plugin generates a report that contains all the assets of specific entrypoints.
 This report can be used to render the page on the server
 (to include only the necessary styles and scripts).
@@ -18,17 +32,6 @@ This report can be used to render the page on the server
     }
 }
 ```
-
-<!-- TOC tocDepth:2..3 chapterDepth:2..6 -->
-
-- [Getting started](#getting-started)
-- [Usage](#usage)
-- [Options](#options)
-    - [`outputPath`](#outputpath)
-    - [`exclude`](#exclude)
-    - [`assetTypes`](#assettypes)
-
-<!-- /TOC -->
 
 ## Getting started
 
