@@ -4,6 +4,7 @@ const { dirname } = require('path');
 class ChunksReportPlugin {
     static defaultOptions = {
         outputPath: 'chunks-report.json',
+        exclude: [],
         assetTypes: {
             js: /\.js$/,
             css: /\.css$/,
@@ -31,7 +32,11 @@ class ChunksReportPlugin {
                 }, []);
 
                 for (const [type, regex] of Object.entries(this.options.assetTypes)) {
-                    entrypoints[name][type] = assets.filter((asset) => regex.test(asset));
+                    entrypoints[name][type] = assets.filter(
+                        (asset) =>
+                            regex.test(asset) &&
+                            !this.options.exclude.some((excludeRegex) => excludeRegex.test(asset))
+                    );
                 }
             }
 
